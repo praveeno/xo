@@ -30,3 +30,11 @@ table {
 .player {
   font-size: 80px;
 }
+
+.playerHeading {
+  font-size: xx-large;
+}
+
+.shadow {
+  box-shadow: 20px 18px 19px 0px #888888e6;
+}

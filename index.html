@@ -4,22 +4,29 @@
     <link href="style.css" rel="stylesheet">
   </head>
   <body>
-    <h2 id="player-info">Player</h2>
+    <div>
+      <span class="playerHeading" id="player-info1">Player X</span>
+      <span class="playerHeading" id="player-info2" style="float: right;">Player O</span>
+    </div>
+    <div>
+      <span id="colors"></span>
+      <span id="colors2" style="float: right;"></span>
+    </div>
     <table>
-      <tr>
-        <td class="bottom right"></td>
-        <td class="bottom"></td>
-        <td class="bottom left"></td>
+      <tr id="0">
+        <td id="0" class="bottom right"></td>
+        <td id="1" class="bottom"></td>
+        <td id="2" class="bottom left"></td>
       </tr>
-      <tr>
-        <td class="right"></td>
-        <td></td>
-        <td class="left"></td>
+      <tr id="1">
+        <td id="0" class="right"></td>
+        <td id="1"></td>
+        <td id="2" class="left"></td>
       </tr>
-      <tr>
-        <td class="top right"></td>
-        <td class="top"></td>
-        <td class="top left"></td>
+      <tr id="2">
+        <td id="0" class="top right"></td>
+        <td id="1" class="top"></td>
+        <td id="2" class="top left"></td>
       </tr>
     </table>
 
