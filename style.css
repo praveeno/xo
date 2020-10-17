@@ -1,0 +1,27 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+.bottom {
+  border-bottom: 2px solid black;
+}
+.top {
+  border-top: 2px solid black;
+}
+.right {
+  border-right: 2px solid black;
+}
+.left {
+  border-left: 2px solid black;
+}
+tr td {
+  height: 100px;
+}
+tr td:nth-child(2) {
+  padding-left: 2px;
+}
+table {
+  width: 50%;
+  margin: auto;
+  height: 100%;
+}
