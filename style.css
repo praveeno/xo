@@ -16,6 +16,8 @@ html, body {
 }
 tr td {
   height: 100px;
+  width: 50px;
+  text-align: center;
 }
 tr td:nth-child(2) {
   padding-left: 2px;
@@ -24,4 +26,7 @@ table {
   width: 50%;
   margin: auto;
   height: 100%;
+}
+.player {
+  font-size: 80px;
 }
