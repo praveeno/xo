@@ -20,7 +20,7 @@ let gamePause = false;
 // const player2Name = prompt("Player 2 name");
 function addColorTab(elem, whoToUpdate) {
   const colors = ['red', 'green', 'blue', 'orange', 'purple', 'pink'];
-
+  const buttons = [];
   for (let i =0; i < colors.length; i++) {
     const color = colors[i];
     btn = document.createElement('button');
@@ -31,13 +31,15 @@ function addColorTab(elem, whoToUpdate) {
     btn.style.margin = 2+'px';
     btn.addEventListener('click', function() {
       const elem = this;
-
+      buttons.forEach(b => b.style.outline = '');
+      elem.style.outline = '1px auto black';
       if(whoToUpdate == 'player1') {
         currentColor1 = elem.style.backgroundColor;
       } else if (whoToUpdate == 'player2') {
         currentColor2 = elem.style.backgroundColor;
       }
     });
+    buttons.push(btn);
     elem.appendChild(btn);
   }
 }
