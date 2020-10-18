@@ -3,33 +3,40 @@
     <title>Game</title>
     <link href="style.css" rel="stylesheet">
   </head>
-  <body>
-    <div>
-      <span class="playerHeading" id="player-info1">Player X</span>
-      <span class="playerHeading" id="player-info2" style="float: right;">Player O</span>
+  <body class="no-scroll">
+    <div class="wrapper" id="wrapper">
+      <div>
+        <span class="playerHeading" id="player-info1">Player X</span>
+        <span class="playerHeading" id="player-info2" style="float: right;">Player O</span>
+      </div>
+      <div>
+        <span id="colors"></span>
+        <span id="colors2" style="float: right;"></span>
+      </div>
+      <div>
+        <span style="float:left" id="point1">Points: 0</span>
+        <span style="float:right" id="point2">Points: 0</span>
+      </div>
+      <table>
+        <tr id="0">
+          <td id="0" class="bottom right"></td>
+          <td id="1" class="bottom"></td>
+          <td id="2" class="bottom left"></td>
+        </tr>
+        <tr id="1">
+          <td id="0" class="right"></td>
+          <td id="1"></td>
+          <td id="2" class="left"></td>
+        </tr>
+        <tr id="2">
+          <td id="0" class="top right"></td>
+          <td id="1" class="top"></td>
+          <td id="2" class="top left"></td>
+        </tr>
+      </table>
     </div>
-    <div>
-      <span id="colors"></span>
-      <span id="colors2" style="float: right;"></span>
+    <div class="msg-window" id="msg-window">
     </div>
-    <table>
-      <tr id="0">
-        <td id="0" class="bottom right"></td>
-        <td id="1" class="bottom"></td>
-        <td id="2" class="bottom left"></td>
-      </tr>
-      <tr id="1">
-        <td id="0" class="right"></td>
-        <td id="1"></td>
-        <td id="2" class="left"></td>
-      </tr>
-      <tr id="2">
-        <td id="0" class="top right"></td>
-        <td id="1" class="top"></td>
-        <td id="2" class="top left"></td>
-      </tr>
-    </table>
-
     <script src="app.js"></script>
   </body>
 </html>
